@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>My Profile</title>
+    <!--link rel="stylesheet" href="./elon.css" />
+    <link rel="stylesheet" media="all" href="./elon.css"-->
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="./css/mobilescreen.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="./css/pcscreen.css">
+    <link rel="stylesheet" href="./font-awesome5/css/all.css" />
+
+    <script>
+        function flowerImage() {
+            document.getElementById("myImg").src = "./imgs/cutedog.jpg";
+        }
+
+        function personImage() {
+            document.getElementById("myImg").src = "./imgs/person.jpg";
+        }
+
+        function qrImage() {
+            document.getElementById("myImg").src = "./imgs/qr.jpg";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="topsection">
+
+            <img id="myImg" onmouseover="flowerImage()" onmouseout="personImage()" src="./imgs/person.jpg" />
+            <p class="name"> Jill Mei</p>
+            <p class="mobile"> Mobile: +86 13826582150</p>
+            <p class="email"> Email: 1154545393@qq.com</p>
+
+
+        </div>
+
+        <div class="middlesection">
+
+            <div class="social">
+
+                <i id="wx" onmouseover="qrImage()" onmouseout="personImage()" class="fab fa-weixin fa-fw"></i>
+
+
+                <a href="https://weibo.com/meijinyan">
+                    <i class=" fab fa-weibo fa-fw "></i>
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="bottomsection ">
+
+            <p>Kirin Property <span>Broker</span></p>
+            <p>Orlando <span>Florida</span></p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
